@@ -1,0 +1,12 @@
+{
+  "open": [
+    {
+      "tab": "zsh",
+      "commands": ["*CLOSE"]
+    },
+    {
+      "tab": "1920",
+      "commands": ["cd ACS-1920"]
+    }
+  ]
+}
