@@ -1,0 +1,29 @@
+h1,
+h2 {
+  font-family: "Georgia", serif;
+}
+body {
+  font-family: "Arial", sans-serif;
+}
+a {
+  color: rgb(15, 95, 253);
+}
+
+.globe {
+  width: 200px;
+}
+.icon {
+  width: 28px;
+}
+
+.search {
+  width: 400px;
+}
+.line-width {
+  width: 18px;
+}
+
+.tiny-text {
+  font-size: 12px;
+  color: grey;
+}
