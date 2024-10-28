@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/wikilogo.png" type="image/x-icon" />
     <title>Wikipedia Clone</title>
   </head>
   <body>
@@ -60,8 +61,13 @@
       >
         <div class="search d-flex align-items-center justify-content-center">
           <div class="border-top flex-grow-1"></div>
-          <div class="border text-primary py-1 px-2 mx-2">
-            Read Wikipedia in your language
+          <div class="text-primary py-1 px-2 mx-2">
+            <select class="form-select" aria-label="language">
+              <option selected>Read Wikipedia in your language</option>
+              <option value="1">English</option>
+              <option value="2">French</option>
+              <option value="3">Spanish</option>
+            </select>
           </div>
           <div class="border-top flex-grow-1"></div>
         </div>
@@ -88,11 +94,11 @@
               </div>
             </div>
           </div>
-          <div class="d-flex m-2">
+          <div class="bg-grey d-flex m-2">
             <div class="d-flex align-items-start p-3">
               <img
                 class="mt-2 icon"
-                src="assets/wikimedia.png"
+                src="assets/wikilogo.png"
                 alt="wikimedia logo"
               />
               <div class="flex-grow-1 ms-4">
@@ -102,6 +108,10 @@
                   lists across devices and customize your reading experience
                   with the official Wikipedia app.
                 </p>
+                <div class="app-store">
+                  <img src="assets/googleplay.png" alt="google play store" />
+                  <img src="assets/app.png" alt="app store" />
+                </div>
               </div>
             </div>
           </div>
@@ -111,102 +121,146 @@
         <div class="col-sm-12 col-md-8 p-2">
           <div class="row">
             <!-- link component -->
-            <div class="col-sm-12 col-md-4">
-              <div class="my-3 d-flex p-2">
+            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+              <div class="link my-3 d-flex">
                 <img class="icon" src="assets/commons.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
-                  <a href="#">Commons</a>
+                  <a href="https://commons.wikimedia.org">Commons</a>
                   <p class="mb-0 tiny-text">Free media collection</p>
                 </div>
               </div>
             </div>
+
             <!-- link component -->
-            <div class="col-sm-12 col-md-4">
-              <div class="my-3 d-flex p-2">
-                <img class="icon" src="assets/commons.png" alt="icon" />
+            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+              <div class="link my-3 d-flex">
+                <img class="icon" src="assets/wikivoyage.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
-                  <a href="#">Commons</a>
-                  <p class="mb-0 tiny-text">Free media collection</p>
+                  <a href="https://www.wikivoyage.org">Wikivoyage</a>
+                  <p class="mb-0 tiny-text">Free travel guide</p>
                 </div>
               </div>
             </div>
+
             <!-- link component -->
-            <div class="col-sm-12 col-md-4">
-              <div class="my-3 d-flex p-2">
-                <img class="icon" src="assets/commons.png" alt="icon" />
+            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+              <div class="link my-3 d-flex">
+                <img class="icon" src="assets/wiktionary.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
-                  <a href="#">Commons</a>
-                  <p class="mb-0 tiny-text">Free media collection</p>
+                  <a href="https://www.wiktionary.org">Wiktionary</a>
+                  <p class="mb-0 tiny-text">Free dictionary</p>
                 </div>
               </div>
             </div>
+
             <!-- link component -->
-            <div class="col-sm-12 col-md-4">
-              <div class="my-3 d-flex p-2">
-                <img class="icon" src="assets/commons.png" alt="icon" />
+            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+              <div class="link my-3 d-flex">
+                <img class="icon" src="assets/wikibooks.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
-                  <a href="#">Commons</a>
-                  <p class="mb-0 tiny-text">Free media collection</p>
+                  <a href="https://www.wikibooks.org">Wikibooks</a>
+                  <p class="mb-0 tiny-text">Free textbooks</p>
                 </div>
               </div>
             </div>
+
             <!-- link component -->
-            <div class="col-sm-12 col-md-4">
-              <div class="my-3 d-flex p-2">
-                <img class="icon" src="assets/commons.png" alt="icon" />
+            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+              <div class="link my-3 d-flex">
+                <img class="icon" src="assets/wikinews.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
-                  <a href="#">Commons</a>
-                  <p class="mb-0 tiny-text">Free media collection</p>
+                  <a href="https://www.wikinews.org">Wikinews</a>
+                  <p class="mb-0 tiny-text">Free news source</p>
                 </div>
               </div>
             </div>
+
             <!-- link component -->
-            <div class="col-sm-12 col-md-4">
-              <div class="my-3 d-flex p-2">
-                <img class="icon" src="assets/commons.png" alt="icon" />
+            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+              <div class="link my-3 d-flex">
+                <img class="icon" src="assets/wikidata.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
-                  <a href="#">Commons</a>
-                  <p class="mb-0 tiny-text">Free media collection</p>
+                  <a href="https://www.wikidata.org">Wikidata</a>
+                  <p class="mb-0 tiny-text">Free knowledge base</p>
                 </div>
               </div>
             </div>
+
             <!-- link component -->
-            <div class="col-sm-12 col-md-4">
-              <div class="my-3 d-flex p-2">
-                <img class="icon" src="assets/commons.png" alt="icon" />
+            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+              <div class="link my-3 d-flex">
+                <img class="icon" src="assets/wikiversity.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
-                  <a href="#">Commons</a>
-                  <p class="mb-0 tiny-text">Free media collection</p>
+                  <a href="https://www.wikiversity.org">Wikiversity</a>
+                  <p class="mb-0 tiny-text">Free learning resources</p>
                 </div>
               </div>
             </div>
+
             <!-- link component -->
-            <div class="col-sm-12 col-md-4">
-              <div class="my-3 d-flex p-2">
-                <img class="icon" src="assets/commons.png" alt="icon" />
+            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+              <div class="link my-3 d-flex">
+                <img class="icon" src="assets/wikiquote.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
-                  <a href="#">Commons</a>
-                  <p class="mb-0 tiny-text">Free media collection</p>
+                  <a href="https://www.wikiquote.org">Wikiquote</a>
+                  <p class="mb-0 tiny-text">Free quote compendium</p>
                 </div>
               </div>
             </div>
+
             <!-- link component -->
-            <div class="col-sm-12 col-md-4">
-              <div class="my-3 d-flex p-2">
-                <img class="icon" src="assets/commons.png" alt="icon" />
+            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+              <div class="link my-3 d-flex">
+                <img class="icon" src="assets/mediawiki.jpeg" alt="icon" />
                 <div class="flex-grow-1 ms-2">
-                  <a href="#">Commons</a>
-                  <p class="mb-0 tiny-text">Free media collection</p>
+                  <a href="https://www.mediawiki.org">MediaWiki</a>
+                  <p class="mb-0 tiny-text">Free & open wiki software</p>
                 </div>
               </div>
             </div>
+
             <!-- link component -->
-            <div class="col-sm-12 col-md-4">
-              <div class="my-3 d-flex p-2">
-                <img class="icon" src="assets/commons.png" alt="icon" />
+            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+              <div class="link my-3 d-flex">
+                <img class="icon" src="assets/wikisource.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
-                  <a href="#">Commons</a>
-                  <p class="mb-0 tiny-text">Free media collection</p>
+                  <a href="https://www.wikisource.org">Wikisource</a>
+                  <p class="mb-0 tiny-text">Free content library</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- link component -->
+            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+              <div class="link my-3 d-flex">
+                <img class="icon" src="assets/wikispecies.png" alt="icon" />
+                <div class="flex-grow-1 ms-2">
+                  <a href="https://www.species.wikimedia.org">Wikispecies</a>
+                  <p class="mb-0 tiny-text">Free species directory</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- link component -->
+            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+              <div class="link my-3 d-flex">
+                <img class="icon" src="assets/wikifunctions.png" alt="icon" />
+                <div class="flex-grow-1 ms-2">
+                  <a href="https://www.wikifunctions.org">Wikifunctions</a>
+                  <p class="mb-0 tiny-text">Free function library</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- link component -->
+            <div class="link-p col-sm-6 col-lg-4 d-flex justify-content-center">
+              <div class="link my-3 d-flex">
+                <img class="icon" src="assets/logo.png" alt="icon" />
+                <div class="flex-grow-1 ms-2">
+                  <a href="https://meta.wikimedia.org">Meta-Wiki</a>
+                  <p class="mb-0 tiny-text">
+                    Community coordination & documentation
+                  </p>
                 </div>
               </div>
             </div>

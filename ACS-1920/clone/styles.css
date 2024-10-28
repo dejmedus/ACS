@@ -13,9 +13,19 @@ a {
   width: 200px;
 }
 .icon {
-  width: 28px;
+  width: auto;
+  height: 28px;
 }
 
+.link {
+  width: 240px;
+}
+.link:hover {
+  background-color: rgb(247, 247, 247);
+}
+.app-store img {
+  height: 28px;
+}
 .search {
   width: 400px;
 }
@@ -23,6 +33,17 @@ a {
   width: 18px;
 }
 
+.form-select {
+  color: rgb(15, 95, 253);
+  border-radius: 0;
+  background-color: rgb(247, 247, 247);
+}
+.form-select:hover {
+  background-color: white;
+}
+.bg-grey {
+  background-color: rgb(247, 247, 247);
+}
 .tiny-text {
   font-size: 12px;
   color: grey;
