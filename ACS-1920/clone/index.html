@@ -24,12 +24,66 @@
   <body>
     <main>
       <!-- hero -->
-      <div class="my-5 text-center">
+      <div class="my-5 text-center align-items-center d-flex flex-column">
         <div class="my-4">
           <h1 class="fs-2">W<span class="fs-5">IKIPEDI</span>A</h1>
           <h2 class="fs-6">The Free Encyclopedia</h2>
         </div>
-        <img class="globe" src="assets/logo.png" alt="" />
+
+        <div
+          class="globe-container d-flex justify-content-center align-items-center position-relative"
+        >
+          <div
+            class="l-globe-container align-items-start d-flex flex-column position-absolute end-0"
+          >
+            <div class="language-link">
+              <span class="fw-bold fs-6">English</span>
+              6,902,000+ articles
+            </div>
+
+            <div class="language-link">
+              <span class="fw-bold fs-6">日本語</span>
+              1,434,000+ 記事
+            </div>
+            <div class="language-link">
+              <span class="fw-bold fs-6">Deutsch</span>
+              2,954,000+ Artikel
+            </div>
+            <div class="language-link">
+              <span class="fw-bold fs-6">中文</span>
+              1,448,000+ 条目 / 條目
+            </div>
+            <div class="language-link">
+              <span class="fw-bold fs-6">فارسی</span>
+              ۱٬۰۱۷٬۰۰۰+ مقاله
+            </div>
+          </div>
+          <img class="globe" src="assets/logo.png" alt="wikipedia globe logo" />
+          <div
+            class="r-globe-container align-items-end d-flex flex-column position-absolute start-0"
+          >
+            <div class="language-link">
+              <span class="fw-bold fs-6">Русский</span>
+              2,006,000+ статей
+            </div>
+            <div class="language-link">
+              <span class="fw-bold fs-6">Español</span>
+              1.986.000+ artículos
+            </div>
+            <div class="language-link">
+              <span class="fw-bold fs-6">Français</span>
+              2 643 000+ articles
+            </div>
+            <div class="language-link">
+              <span class="fw-bold fs-6">Italiano</span>
+              1,888,000+ voci
+            </div>
+            <div class="language-link">
+              <span class="fw-bold fs-6">Português </span>
+              1.136.000+ artigos
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- search bar -->
@@ -63,7 +117,9 @@
           <div class="border-top flex-grow-1"></div>
           <div class="text-primary py-1 px-2 mx-2">
             <select class="form-select" aria-label="language">
-              <option selected>Read Wikipedia in your language</option>
+              <option selected class="fw-bold">
+                Read Wikipedia in your language
+              </option>
               <option value="1">English</option>
               <option value="2">French</option>
               <option value="3">Spanish</option>
@@ -79,7 +135,7 @@
         <!-- left footer col -->
         <div class="col-sm-12 col-md-4">
           <div class="d-flex m-2">
-            <div class="d-flex align-items-start p-3">
+            <div class="d-flex align-items-start p-3 text-center text-md-left">
               <img
                 class="mt-2 icon"
                 src="assets/wikimedia.png"
@@ -95,7 +151,7 @@
             </div>
           </div>
           <div class="bg-grey d-flex m-2">
-            <div class="d-flex align-items-start p-3">
+            <div class="d-flex align-items-start p-3 text-center text-md-left">
               <img
                 class="mt-2 icon"
                 src="assets/wikilogo.png"
@@ -118,10 +174,10 @@
         </div>
 
         <!-- right footer col links -->
-        <div class="col-sm-12 col-md-8 p-2">
+        <div class="col-sm-12 col-md-8 p-4">
           <div class="row">
             <!-- link component -->
-            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+            <div class="col-6 col-lg-4 d-flex justify-content-center">
               <div class="link my-3 d-flex">
                 <img class="icon" src="assets/commons.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
@@ -132,7 +188,7 @@
             </div>
 
             <!-- link component -->
-            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+            <div class="col-6 col-lg-4 d-flex justify-content-center">
               <div class="link my-3 d-flex">
                 <img class="icon" src="assets/wikivoyage.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
@@ -143,7 +199,7 @@
             </div>
 
             <!-- link component -->
-            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+            <div class="col-6 col-lg-4 d-flex justify-content-center">
               <div class="link my-3 d-flex">
                 <img class="icon" src="assets/wiktionary.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
@@ -154,7 +210,7 @@
             </div>
 
             <!-- link component -->
-            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+            <div class="col-6 col-lg-4 d-flex justify-content-center">
               <div class="link my-3 d-flex">
                 <img class="icon" src="assets/wikibooks.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
@@ -165,7 +221,7 @@
             </div>
 
             <!-- link component -->
-            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+            <div class="col-6 col-lg-4 d-flex justify-content-center">
               <div class="link my-3 d-flex">
                 <img class="icon" src="assets/wikinews.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
@@ -176,7 +232,7 @@
             </div>
 
             <!-- link component -->
-            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+            <div class="col-6 col-lg-4 d-flex justify-content-center">
               <div class="link my-3 d-flex">
                 <img class="icon" src="assets/wikidata.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
@@ -187,7 +243,7 @@
             </div>
 
             <!-- link component -->
-            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+            <div class="col-6 col-lg-4 d-flex justify-content-center">
               <div class="link my-3 d-flex">
                 <img class="icon" src="assets/wikiversity.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
@@ -198,7 +254,7 @@
             </div>
 
             <!-- link component -->
-            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+            <div class="col-6 col-lg-4 d-flex justify-content-center">
               <div class="link my-3 d-flex">
                 <img class="icon" src="assets/wikiquote.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
@@ -209,7 +265,7 @@
             </div>
 
             <!-- link component -->
-            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+            <div class="col-6 col-lg-4 d-flex justify-content-center">
               <div class="link my-3 d-flex">
                 <img class="icon" src="assets/mediawiki.jpeg" alt="icon" />
                 <div class="flex-grow-1 ms-2">
@@ -220,7 +276,7 @@
             </div>
 
             <!-- link component -->
-            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+            <div class="col-6 col-lg-4 d-flex justify-content-center">
               <div class="link my-3 d-flex">
                 <img class="icon" src="assets/wikisource.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
@@ -231,7 +287,7 @@
             </div>
 
             <!-- link component -->
-            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+            <div class="col-6 col-lg-4 d-flex justify-content-center">
               <div class="link my-3 d-flex">
                 <img class="icon" src="assets/wikispecies.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
@@ -242,7 +298,7 @@
             </div>
 
             <!-- link component -->
-            <div class="col-sm-6 col-lg-4 d-flex justify-content-center">
+            <div class="col-6 col-lg-4 d-flex justify-content-center">
               <div class="link my-3 d-flex">
                 <img class="icon" src="assets/wikifunctions.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
@@ -253,7 +309,7 @@
             </div>
 
             <!-- link component -->
-            <div class="link-p col-sm-6 col-lg-4 d-flex justify-content-center">
+            <div class="link-p col-6 col-lg-4 d-flex justify-content-center">
               <div class="link my-3 d-flex">
                 <img class="icon" src="assets/logo.png" alt="icon" />
                 <div class="flex-grow-1 ms-2">
